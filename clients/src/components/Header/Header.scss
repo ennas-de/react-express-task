@@ -1,0 +1,26 @@
+.header {
+  &__container {
+    margin: 0 auto;
+    padding: 15px 0 35px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__logo > .logo__image {
+      width: 150px;
+      height: 70px;
+      border: 1px solid black;
+      background: rgb(149, 148, 148);
+    }
+
+    @media (max-width: 840px) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      // display: block;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.stage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px 0 50px 10px;
+
+  &__container {
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    padding: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    .steps {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+
+      .step {
+        display: flex;
+        flex-direction: row;
+        margin: 8px 0 0 20px;
+        align-items: center;
+
+        &__image {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: blue;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 5px;
+
+          & p {
+            color: #fff;
+            margin: 0 auto;
+            padding: 4px 5px;
+          }
+        }
+
+        &__texts {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      hr {
+        width: 3px;
+        height: 50px;
+        background-color: blue;
+        border: none;
+        margin-left: 32px;
+        margin-top: -7px;
+        margin-bottom: -15px;
+      }
+    }
+
+    .loading {
+      width: 120px;
+      height: 25px;
+      background-color: rgb(179, 176, 176);
+      border: none;
+      border-radius: 20px;
+      margin: 25px 25px;
+    }
+  }
+
+  @media (max-width: 840px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
